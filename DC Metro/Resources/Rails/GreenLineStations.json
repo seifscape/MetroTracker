@@ -1,0 +1,151 @@
+{
+    "Path": [
+             {
+             "LineCode": "GR",
+             "StationCode": "F11",
+             "StationName": "Branch Ave",
+             "SeqNum": 1,
+             "DistanceToPrev": 0
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F10",
+             "StationName": "Suitland",
+             "SeqNum": 2,
+             "DistanceToPrev": 9144
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F09",
+             "StationName": "Naylor Road",
+             "SeqNum": 3,
+             "DistanceToPrev": 7658
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F08",
+             "StationName": "Southern Avenue",
+             "SeqNum": 4,
+             "DistanceToPrev": 6612
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F07",
+             "StationName": "Congress Heights",
+             "SeqNum": 5,
+             "DistanceToPrev": 5508
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F06",
+             "StationName": "Anacostia",
+             "SeqNum": 6,
+             "DistanceToPrev": 6851
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F05",
+             "StationName": "Navy Yard-Ballpark",
+             "SeqNum": 7,
+             "DistanceToPrev": 6254
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F04",
+             "StationName": "Waterfront",
+             "SeqNum": 8,
+             "DistanceToPrev": 3326
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F03",
+             "StationName": "L'Enfant Plaza",
+             "SeqNum": 9,
+             "DistanceToPrev": 4158
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F02",
+             "StationName": "Archives-Navy Memorial-Penn Quarter",
+             "SeqNum": 10,
+             "DistanceToPrev": 2950
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "F01",
+             "StationName": "Gallery Pl-Chinatown",
+             "SeqNum": 11,
+             "DistanceToPrev": 1879
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E01",
+             "StationName": "Mt Vernon Sq 7th St-Convention Center",
+             "SeqNum": 12,
+             "DistanceToPrev": 2985
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E02",
+             "StationName": "Shaw-Howard U",
+             "SeqNum": 13,
+             "DistanceToPrev": 2527
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E03",
+             "StationName": "U Street/African-Amer Civil War Memorial/Cardozo",
+             "SeqNum": 14,
+             "DistanceToPrev": 2555
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E04",
+             "StationName": "Columbia Heights",
+             "SeqNum": 15,
+             "DistanceToPrev": 4715
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E05",
+             "StationName": "Georgia Ave-Petworth",
+             "SeqNum": 16,
+             "DistanceToPrev": 4717
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E06",
+             "StationName": "Fort Totten",
+             "SeqNum": 17,
+             "DistanceToPrev": 8348
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E07",
+             "StationName": "West Hyattsville",
+             "SeqNum": 18,
+             "DistanceToPrev": 10406
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E08",
+             "StationName": "Prince George's Plaza",
+             "SeqNum": 19,
+             "DistanceToPrev": 6670
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E09",
+             "StationName": "College Park-U of Md",
+             "SeqNum": 20,
+             "DistanceToPrev": 10368
+             },
+             {
+             "LineCode": "GR",
+             "StationCode": "E10",
+             "StationName": "Greenbelt",
+             "SeqNum": 21,
+             "DistanceToPrev": 12981
+             }
+             ]
+}

@@ -1,0 +1,150 @@
+{
+    "Stops": [
+        {
+            "StopID": "6000666",
+            "Name": "CLARENDON BLVD + N SCOTT ST",
+            "Lon": -77.080985,
+            "Lat": 38.891953,
+            "Routes": [
+                "38B",
+                "38Bv1",
+                "38Bv2",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000671",
+            "Name": "WILSON BLVD + TROY ST",
+            "Lon": -77.082168,
+            "Lat": 38.892440,
+            "Routes": [
+                "38B",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000661",
+            "Name": "CLARENDON BLVD + N COURTHOUSE RD",
+            "Lon": -77.083596,
+            "Lat": 38.891459,
+            "Routes": [
+                "38B",
+                "38Bv1",
+                "38Bv2",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000682",
+            "Name": "WILSON BLVD + N RHODES ST",
+            "Lon": -77.080679,
+            "Lat": 38.893163,
+            "Routes": [
+                "38B",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000667",
+            "Name": "WILSON BLVD + N COURTHOUSE RD",
+            "Lon": -77.083803,
+            "Lat": 38.891891,
+            "Routes": [
+                "38B",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000677",
+            "Name": "CLARENDON BLVD + N RHODES ST",
+            "Lon": -77.079497,
+            "Lat": 38.892764,
+            "Routes": [
+                "38B",
+                "38Bv1",
+                "38Bv2",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000658",
+            "Name": "CLARENDON BLVD + N UHLE ST",
+            "Lon": -77.085037,
+            "Lat": 38.891314,
+            "Routes": [
+                "38B",
+                "38Bv1",
+                "38Bv2",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000644",
+            "Name": "ARLINGTON BLVD + N RHODES ST",
+            "Lon": -77.078144,
+            "Lat": 38.889845,
+            "Routes": [
+                "4A"
+            ]
+        },
+        {
+            "StopID": "6000635",
+            "Name": "ARLINGTON BLVD SR + ARLINGTON BLVD",
+            "Lon": -77.079138,
+            "Lat": 38.888978,
+            "Routes": [
+                "4A"
+            ]
+        },
+        {
+            "StopID": "6000659",
+            "Name": "WILSON BLVD + N VEITCH ST",
+            "Lon": -77.085579,
+            "Lat": 38.891442,
+            "Routes": [
+                "38B",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6001386",
+            "Name": "WILSON BLVD + N QUINN ST",
+            "Lon": -77.078629,
+            "Lat": 38.894011,
+            "Routes": [
+                "38B",
+                "4B"
+            ]
+        },
+        {
+            "StopID": "6000630",
+            "Name": "ARLINGTON BLVD + N ROLFE ST",
+            "Lon": -77.078695,
+            "Lat": 38.888621,
+            "Routes": [
+                "4A"
+            ]
+        },
+        {
+            "StopID": "6000638",
+            "Name": "ARLINGTON BLVD + N QUEEN ST",
+            "Lon": -77.077781,
+            "Lat": 38.889334,
+            "Routes": [
+                "4A"
+            ]
+        },
+        {
+            "StopID": "6000651",
+            "Name": "CLARENDON BLVD + N WAYNE ST",
+            "Lon": -77.086461,
+            "Lat": 38.890315,
+            "Routes": [
+                "38B",
+                "38Bv1",
+                "38Bv2",
+                "4B"
+            ]
+        }
+    ]
+}
