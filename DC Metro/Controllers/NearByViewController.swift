@@ -49,6 +49,9 @@ class NearByViewController: UIViewController {
         super.viewDidLoad()
         self.mapView.delegate = self
         self.title = "Metro Tracker"
+        self.mapView.showsUserLocation = true
+        self.mapView.showsCompass = true
+
         // Request Permission
         getLocationPermission()
         self.listOfStations = self.loadAllMetroStations()
@@ -282,6 +285,10 @@ extension NearByViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
     {
+        // keep the default user location Annotation
+        if (annotation is MKUserLocation) {
+            return nil
+        }
         
         let annotationIdentifier = "AnnotationIdentifier"
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier)

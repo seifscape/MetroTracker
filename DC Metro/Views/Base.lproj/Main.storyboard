@@ -15,11 +15,11 @@
             <objects>
                 <viewController title="Next Trains" id="kEF-dG-lNN" customClass="NextMetroRailViewController" customModule="DC_Metro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qwm-YW-2zI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LNp-PG-MHz">
-                                <rect key="frame" x="0.0" y="248" width="375" height="370"/>
+                                <rect key="frame" x="0.0" y="184" width="375" height="370"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="370" id="5hf-7w-LGv"/>
@@ -52,10 +52,10 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yuvraj-singh-412874-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="RfR-Wc-QF1">
-                                <rect key="frame" x="0.0" y="64" width="375" height="184"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metro Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NrU-ML-8A3">
-                                <rect key="frame" x="0.0" y="222" width="375" height="38"/>
+                                <rect key="frame" x="0.0" y="158" width="375" height="38"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -94,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="mutedStandard" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umV-sx-yxk">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umV-sx-yxk">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </mapView>
                         </subviews>
@@ -374,6 +374,6 @@
         <image name="yuvraj-singh-412874-unsplash" width="6000" height="3376"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c0H-fB-JMR"/>
+        <segue reference="Vdg-bH-tLS"/>
     </inferredMetricsTieBreakers>
 </document>
