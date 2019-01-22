@@ -29,57 +29,60 @@ class RailLineStationsViewController: UIViewController, UITableViewDelegate, UIT
             self.metroPath = self.readJson(fileName: metroLineJsonFile)
 
         }
-        self.listOfMetroStations = self.loadAllMetroStations()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.listOfMetroStations = self.loadAllMetroStations()
+        let navigationTitleFont = UIFont(name: "Helvetica Neue", size: 18)!
         
         if let metroLineColor = currentMetroLine?.lineCode {
             switch metroLineColor {
             case "BL":
                 self.navigationController?.navigationBar.barTintColor = metroLineColors.kBL_COLOR
                 self.navigationController?.navigationBar.tintColor = UIColor.white
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-                self.navigationController?.title = "Blue Line"
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
+                                                                                NSAttributedStringKey.font: navigationTitleFont]
                 self.title = "Blue Line"
             case "GR":
                 self.navigationController?.navigationBar.barTintColor = metroLineColors.kGR_COLOR
                 self.navigationController?.navigationBar.tintColor = UIColor.white
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-                self.navigationController?.title = "Green Line"
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
+                                                                                NSAttributedStringKey.font: navigationTitleFont]
                 self.title = "Green Line"
             case "OR":
                 self.navigationController?.navigationBar.barTintColor = metroLineColors.kOR_COLOR
                 self.navigationController?.navigationBar.tintColor = UIColor.white
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-                self.navigationController?.title = "Orange Line"
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
+                                                                                NSAttributedStringKey.font: navigationTitleFont]
                 self.title = "Orange Line"
             case "RD":
                 self.navigationController?.navigationBar.barTintColor = metroLineColors.kRD_COLOR
                 self.navigationController?.navigationBar.tintColor = UIColor.white
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-                self.navigationController?.title = "Red Line"
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
+                                                                                NSAttributedStringKey.font: navigationTitleFont]
                 self.title = "Red Line"
             case "SV":
                 self.navigationController?.navigationBar.barTintColor = metroLineColors.kSV_COLOR
                 self.navigationController?.navigationBar.tintColor = UIColor.white
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-                self.navigationController?.title = "Silver Line"
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
+                                                                                NSAttributedStringKey.font: navigationTitleFont]
                 self.title = "Silver Line"
             case "YL":
                 self.navigationController?.navigationBar.barTintColor = metroLineColors.kYL_COLOR
                 self.navigationController?.navigationBar.tintColor = UIColor.white
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-                self.navigationController?.title = "Yellow Line"
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,
+                                                                                NSAttributedStringKey.font: navigationTitleFont]
                 self.title = "Yellow Line"
             default:
                 self.navigationController?.navigationBar.barTintColor = UIColor.white
                 self.navigationController?.navigationBar.tintColor = UIColor.black
-                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
+                self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black,
+                                                                                NSAttributedStringKey.font: navigationTitleFont]
             }
-
+            
         }
+
     }
     
     

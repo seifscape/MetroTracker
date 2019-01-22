@@ -32,6 +32,12 @@ class NextMetroRailViewController: UIViewController, UITableViewDelegate, UITabl
         self.tableView.contentInsetAdjustmentBehavior = .never
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let navigationTitleFont = UIFont(name: "Helvetica Neue", size: 18)!
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: navigationTitleFont, NSAttributedStringKey.foregroundColor: UIColor.black]
+    }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
