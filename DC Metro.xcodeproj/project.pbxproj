@@ -72,6 +72,7 @@
 		285F478C21DAF0F700A1DEC2 /* NextMetroRailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMetroRailViewController.swift; sourceTree = "<group>"; };
 		287031FB2131EC3A00640629 /* RailLineStationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailLineStationsViewController.swift; sourceTree = "<group>"; };
 		287031FD2132373C00640629 /* AllRailStations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AllRailStations.json; sourceTree = "<group>"; };
+		2899895C21F7D9EB003095DC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		28A8F53C210E6B62007F9E1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		28A8F542210EA822007F9E1A /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		28A8F544210EA8B4007F9E1A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -304,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				28A8F53C210E6B62007F9E1A /* Constants.swift */,
+				2899895C21F7D9EB003095DC /* Helper.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";

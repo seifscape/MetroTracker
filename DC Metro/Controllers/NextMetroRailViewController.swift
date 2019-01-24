@@ -15,7 +15,7 @@ import Alamofire
 class NextMetroRailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let customSessionManager = APIManager.sessionManager
-    @IBOutlet var stationName:UILabel!
+    @IBOutlet var stationLabel:UILabel!
     @IBOutlet var tableView:UITableView!
     var listOfNextTrains:Promise<[Train?]>?
     var currentStation:Station? {
@@ -30,6 +30,9 @@ class NextMetroRailViewController: UIViewController, UITableViewDelegate, UITabl
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.contentInsetAdjustmentBehavior = .never
+        if let station = currentStation {
+            stationLabel.text = station.name
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

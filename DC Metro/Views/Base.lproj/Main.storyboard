@@ -54,31 +54,31 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yuvraj-singh-412874-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="RfR-Wc-QF1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metro Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NrU-ML-8A3">
-                                <rect key="frame" x="0.0" y="158" width="375" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-hG-Y0U">
+                                <rect key="frame" x="0.0" y="128" width="375" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LNp-PG-MHz" firstAttribute="trailing" secondItem="RfR-Wc-QF1" secondAttribute="trailing" id="8P7-k7-PXl"/>
-                            <constraint firstItem="odd-Gt-O5S" firstAttribute="bottom" secondItem="NrU-ML-8A3" secondAttribute="bottom" constant="358" id="Csh-ju-J6H"/>
+                            <constraint firstItem="LNp-PG-MHz" firstAttribute="top" secondItem="hPN-hG-Y0U" secondAttribute="bottom" constant="8" symbolic="YES" id="J0I-NS-z8f"/>
                             <constraint firstItem="LNp-PG-MHz" firstAttribute="top" secondItem="RfR-Wc-QF1" secondAttribute="bottom" id="TGP-Gx-tc9"/>
                             <constraint firstItem="RfR-Wc-QF1" firstAttribute="top" secondItem="odd-Gt-O5S" secondAttribute="top" id="TXk-GY-uV7"/>
-                            <constraint firstItem="NrU-ML-8A3" firstAttribute="top" secondItem="odd-Gt-O5S" secondAttribute="top" constant="158" id="d5P-wk-zPz"/>
+                            <constraint firstItem="hPN-hG-Y0U" firstAttribute="leading" secondItem="RfR-Wc-QF1" secondAttribute="leading" id="Y8r-nx-taO"/>
                             <constraint firstItem="RfR-Wc-QF1" firstAttribute="leading" secondItem="odd-Gt-O5S" secondAttribute="leading" id="fHy-6M-Q30"/>
-                            <constraint firstItem="NrU-ML-8A3" firstAttribute="trailing" secondItem="RfR-Wc-QF1" secondAttribute="trailing" id="lMr-Sc-36H"/>
+                            <constraint firstItem="hPN-hG-Y0U" firstAttribute="trailing" secondItem="RfR-Wc-QF1" secondAttribute="trailing" id="gDA-Qk-r2M"/>
+                            <constraint firstItem="hPN-hG-Y0U" firstAttribute="top" secondItem="RfR-Wc-QF1" secondAttribute="bottom" constant="-56" id="qqz-0n-deS"/>
                             <constraint firstItem="RfR-Wc-QF1" firstAttribute="trailing" secondItem="odd-Gt-O5S" secondAttribute="trailing" id="ts5-cF-h0h"/>
                             <constraint firstItem="odd-Gt-O5S" firstAttribute="bottom" secondItem="LNp-PG-MHz" secondAttribute="bottom" id="v0f-5f-pWA"/>
                             <constraint firstItem="LNp-PG-MHz" firstAttribute="leading" secondItem="RfR-Wc-QF1" secondAttribute="leading" id="xI6-Uf-WLs"/>
-                            <constraint firstItem="NrU-ML-8A3" firstAttribute="leading" secondItem="RfR-Wc-QF1" secondAttribute="leading" id="xtk-XW-z1f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="odd-Gt-O5S"/>
                     </view>
                     <connections>
-                        <outlet property="stationName" destination="NrU-ML-8A3" id="8rt-cj-c0c"/>
+                        <outlet property="stationLabel" destination="hPN-hG-Y0U" id="bZp-W4-DAM"/>
                         <outlet property="tableView" destination="LNp-PG-MHz" id="UKn-Hn-pVv"/>
                     </connections>
                 </viewController>
@@ -335,7 +335,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Stop Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CVb-uA-zqU">
-                                <rect key="frame" x="0.0" y="158" width="375" height="38"/>
+                                <rect key="frame" x="0.0" y="85" width="375" height="111"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -349,7 +349,7 @@
                             <constraint firstItem="J8d-Nq-z2C" firstAttribute="trailing" secondItem="PVA-ZG-t2S" secondAttribute="trailing" id="Plj-QR-oot"/>
                             <constraint firstItem="EgP-X1-Ze8" firstAttribute="top" secondItem="J8d-Nq-z2C" secondAttribute="bottom" id="RSs-Xn-szp"/>
                             <constraint firstItem="PVA-ZG-t2S" firstAttribute="bottom" secondItem="CVb-uA-zqU" secondAttribute="bottom" constant="358" id="Voy-pg-6vq"/>
-                            <constraint firstItem="CVb-uA-zqU" firstAttribute="top" secondItem="PVA-ZG-t2S" secondAttribute="top" constant="158" id="ZGU-ho-igg"/>
+                            <constraint firstItem="CVb-uA-zqU" firstAttribute="top" secondItem="PVA-ZG-t2S" secondAttribute="top" constant="85" id="ZGU-ho-igg"/>
                             <constraint firstItem="CVb-uA-zqU" firstAttribute="leading" secondItem="J8d-Nq-z2C" secondAttribute="leading" id="bHl-Q6-Llo"/>
                             <constraint firstItem="J8d-Nq-z2C" firstAttribute="leading" secondItem="PVA-ZG-t2S" secondAttribute="leading" id="byv-Ml-huh"/>
                             <constraint firstItem="EgP-X1-Ze8" firstAttribute="leading" secondItem="J8d-Nq-z2C" secondAttribute="leading" id="eOG-fB-KIX"/>

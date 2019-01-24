@@ -82,9 +82,7 @@ class RailLineStationsViewController: UIViewController, UITableViewDelegate, UIT
             }
             
         }
-
     }
-    
     
     override func willMove(toParentViewController parent: UIViewController?) {
         self.navigationController?.navigationBar.barTintColor = UIColor.white
