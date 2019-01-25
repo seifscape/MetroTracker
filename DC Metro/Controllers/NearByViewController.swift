@@ -29,7 +29,7 @@ class NearByViewController: UIViewController {
                 self.busStops = self.retriveNearbyBusStopsFromCoordinates(location: unwrappedLocation, radius: 500)
                 nearyByStations = self.retriveNearbyStationsFromCoordinates(currentUserLocation: unwrappedLocation, radius: 500)
                 let viewRegion = MKCoordinateRegionMakeWithDistance(unwrappedLocation.coordinate, 500, 500)
-                mapView.setRegion(viewRegion, animated: true)
+                mapView.setRegion(viewRegion, animated: false)
             }
         }
     }
