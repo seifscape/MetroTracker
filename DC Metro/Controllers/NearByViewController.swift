@@ -56,18 +56,7 @@ class NearByViewController: UIViewController {
         getLocationPermission()
         self.listOfStations = self.loadAllMetroStations()
     }
-    
-    func hasAnotherPlatform(code: String) -> Station? {
-        var targetStation:Station?
         
-        if let stations = listOfStations?.value {
-            if let multiPlatform = stations.filter({ $0.stationTogether1! == code }).first {
-                targetStation = multiPlatform
-            }
-        }
-        return targetStation
-    }
-    
     func locateStationFromEntrance(entrance: Entrance) -> Station? {
         var targetStation:Station?
         
