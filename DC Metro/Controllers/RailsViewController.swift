@@ -213,7 +213,7 @@ extension RailsViewController : UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension UIImage {
+extension UIImage { 
     class func circle(diameter: CGFloat, color: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: diameter, height: diameter), false, 0)
         let ctx = UIGraphicsGetCurrentContext()!

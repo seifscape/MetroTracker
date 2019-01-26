@@ -13,7 +13,7 @@
 import Foundation
 import Alamofire
 
-class WMATARail: Codable {
+struct WMATARail: Codable {
     let lines: [Line]?
     let stations: [Station]?
     let path: [Path]?
@@ -33,20 +33,9 @@ class WMATARail: Codable {
         case stopName = "StopName"
         case predictions = "Predictions"
     }
-    
-    init(lines: [Line]?, stations: [Station]?, path: [Path]?, trains: [Train]?, entrances: [Entrance]?, stops: [Stop]?, stopName: String?, predictions: [Prediction]?) {
-        self.lines = lines
-        self.stations = stations
-        self.path = path
-        self.trains = trains
-        self.entrances = entrances
-        self.stops = stops
-        self.stopName = stopName
-        self.predictions = predictions
-    }
 }
 
-class Entrance: Codable {
+struct Entrance: Codable {
     let id, name, stationCode1, stationCode2: String?
     let description: String?
     let lat, lon: Double?
@@ -60,19 +49,9 @@ class Entrance: Codable {
         case lat = "Lat"
         case lon = "Lon"
     }
-    
-    init(id: String?, name: String?, stationCode1: String?, stationCode2: String?, description: String?, lat: Double?, lon: Double?) {
-        self.id = id
-        self.name = name
-        self.stationCode1 = stationCode1
-        self.stationCode2 = stationCode2
-        self.description = description
-        self.lat = lat
-        self.lon = lon
-    }
 }
 
-class Line: Codable {
+struct Line: Codable {
     let lineCode, displayName, startStationCode, endStationCode: String?
     let internalDestination1, internalDestination2: String?
     
@@ -84,18 +63,9 @@ class Line: Codable {
         case internalDestination1 = "InternalDestination1"
         case internalDestination2 = "InternalDestination2"
     }
-    
-    init(lineCode: String?, displayName: String?, startStationCode: String?, endStationCode: String?, internalDestination1: String?, internalDestination2: String?) {
-        self.lineCode = lineCode
-        self.displayName = displayName
-        self.startStationCode = startStationCode
-        self.endStationCode = endStationCode
-        self.internalDestination1 = internalDestination1
-        self.internalDestination2 = internalDestination2
-    }
 }
 
-class Path: Codable {
+struct Path: Codable {
     let lineCode, stationCode, stationName: String?
     let seqNum, distanceToPrev: Int?
     
@@ -106,17 +76,9 @@ class Path: Codable {
         case seqNum = "SeqNum"
         case distanceToPrev = "DistanceToPrev"
     }
-    
-    init(lineCode: String?, stationCode: String?, stationName: String?, seqNum: Int?, distanceToPrev: Int?) {
-        self.lineCode = lineCode
-        self.stationCode = stationCode
-        self.stationName = stationName
-        self.seqNum = seqNum
-        self.distanceToPrev = distanceToPrev
-    }
 }
 
-class Prediction: Codable {
+struct Prediction: Codable {
     let routeID, directionText, directionNum: String?
     let minutes: Int?
     let vehicleID, tripID: String?
@@ -129,18 +91,9 @@ class Prediction: Codable {
         case vehicleID = "VehicleID"
         case tripID = "TripID"
     }
-    
-    init(routeID: String?, directionText: String?, directionNum: String?, minutes: Int?, vehicleID: String?, tripID: String?) {
-        self.routeID = routeID
-        self.directionText = directionText
-        self.directionNum = directionNum
-        self.minutes = minutes
-        self.vehicleID = vehicleID
-        self.tripID = tripID
-    }
 }
 
-class Station: Codable {
+struct Station: Codable {
     let code, name, stationTogether1, stationTogether2: String?
     let lineCode1: String?
     let lineCode2, lineCode3: String?
@@ -161,23 +114,9 @@ class Station: Codable {
         case lon = "Lon"
         case address = "Address"
     }
-    
-    init(code: String?, name: String?, stationTogether1: String?, stationTogether2: String?, lineCode1: String?, lineCode2: String?, lineCode3: String?, lineCode4: JSONNull?, lat: Double?, lon: Double?, address: Address?) {
-        self.code = code
-        self.name = name
-        self.stationTogether1 = stationTogether1
-        self.stationTogether2 = stationTogether2
-        self.lineCode1 = lineCode1
-        self.lineCode2 = lineCode2
-        self.lineCode3 = lineCode3
-        self.lineCode4 = lineCode4
-        self.lat = lat
-        self.lon = lon
-        self.address = address
-    }
 }
 
-class Address: Codable {
+struct Address: Codable {
     let street, city, state, zip: String?
     
     enum CodingKeys: String, CodingKey {
@@ -186,16 +125,9 @@ class Address: Codable {
         case state = "State"
         case zip = "Zip"
     }
-    
-    init(street: String?, city: String?, state: String?, zip: String?) {
-        self.street = street
-        self.city = city
-        self.state = state
-        self.zip = zip
-    }
 }
 
-class Stop: Codable {
+struct Stop: Codable {
     let stopID, name: String?
     let lon, lat: Double?
     let routes: [String]?
@@ -207,17 +139,9 @@ class Stop: Codable {
         case lat = "Lat"
         case routes = "Routes"
     }
-    
-    init(stopID: String?, name: String?, lon: Double?, lat: Double?, routes: [String]?) {
-        self.stopID = stopID
-        self.name = name
-        self.lon = lon
-        self.lat = lat
-        self.routes = routes
-    }
 }
 
-class Train: Codable {
+struct Train: Codable {
     let car, destination, destinationCode, destinationName: String?
     let group, line, locationCode, locationName: String?
     let min: String?
@@ -232,18 +156,6 @@ class Train: Codable {
         case locationCode = "LocationCode"
         case locationName = "LocationName"
         case min = "Min"
-    }
-    
-    init(car: String?, destination: String?, destinationCode: String?, destinationName: String?, group: String?, line: String?, locationCode: String?, locationName: String?, min: String?) {
-        self.car = car
-        self.destination = destination
-        self.destinationCode = destinationCode
-        self.destinationName = destinationName
-        self.group = group
-        self.line = line
-        self.locationCode = locationCode
-        self.locationName = locationName
-        self.min = min
     }
 }
 
